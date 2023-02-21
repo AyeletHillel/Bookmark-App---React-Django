@@ -5,9 +5,10 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Login from "./pages/Login"
 import Signup from './pages/Signup';
+import Show from './pages/Show';
 
 export default function App() {
   return (
-<Signup/>
+<Show/>
   )
 }

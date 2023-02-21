@@ -6,7 +6,7 @@ const Cards = () => {
       <div class="w-full px-4 md:w-1/2 xl:w-1/3">
         <div class="mb-10 overflow-hidden rounded-lg bg-white">
           <img
-            src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-01.jpg"
+            src="https://images.rawpixel.com/image_400/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3AtMjAwLWV5ZS0wMzQyNzAyLmpwZw.jpg"
             alt="image"
             class="w-full"
           />
@@ -35,7 +35,7 @@ const Cards = () => {
       <div class="w-full px-4 md:w-1/2 xl:w-1/3">
         <div class="mb-10 overflow-hidden rounded-lg bg-white">
           <img
-            src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-02.jpg"
+            src="https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjkyOS1hZXctMzFfMV8xLmpwZw.jpg"
             alt="image"
             class="w-full"
           />
