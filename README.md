@@ -5,22 +5,13 @@ Through this platform, users can access carefully curated content such as articl
 
 # Technologies Used
 
-### Backend
-
-* Python
-* Django
-* Postgres
-* render.com
-
-### Frontend
-
 * React.js
 * HTML
 * CSS
 * Tailwind UI
 * render.com
 
-## Routes & Components
+## Frontend Route Table
 
 | Route	| Element |	Loader | Action	| Summary
 | --- | --- | --- | --- | --- |
@@ -28,6 +19,10 @@ Through this platform, users can access carefully curated content such as articl
 | /:id | Show | showLoader |  | Loads one bookmark
 | /update/:id | Update | | updateAction | Updates one bookmark
 | /delete/:id | Delete | | deleteeAction | Deletes one bookmark
+
+## Component Architecture
+
+<img width="465" alt="Screen Shot 2023-02-21 at 9 43 48 PM" src="https://user-images.githubusercontent.com/91492759/220507818-82096483-5379-47eb-964e-6bb72a15f065.png">
 
 
 ## Wireframes
