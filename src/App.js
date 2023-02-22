@@ -9,6 +9,6 @@ import Show from './pages/Show';
 
 export default function App() {
   return (
-<Show/>
+<Index/>
   )
 }
