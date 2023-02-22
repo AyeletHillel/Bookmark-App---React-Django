@@ -1,4 +1,4 @@
-# Bookmark App - Backend
+# Bookmark App - Frontend
 
 This app is dedicated to helping people learn data science and software engineering. Built using Python and Django for the backend, and React for the frontend, this app provides users with the ability to add reccomendations for helpul resources and manage them with all CRUD functionality. 
 Through this platform, users can access carefully curated content such as articles, books, YouTube videos and more. 
