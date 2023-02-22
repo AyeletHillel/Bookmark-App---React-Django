@@ -16,9 +16,11 @@ Through this platform, users can access carefully curated content such as articl
 | Route	| Element |	Loader | Action	| Summary
 | --- | --- | --- | --- | --- |
 | / | Index | indexLoader |  | Loads a list of all bookmarks
-| /:id | Show | showLoader |  | Loads one bookmark
+| /bookmark/:id | Show | showLoader |  | Loads one bookmark
+| /create | Create | | createAction | Create one bookmark
 | /update/:id | Update | | updateAction | Updates one bookmark
 | /delete/:id | Delete | | deleteeAction | Deletes one bookmark
+
 
 ## Component Architecture
 
