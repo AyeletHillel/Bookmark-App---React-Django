@@ -1,14 +1,11 @@
-import './App.css';
-import Cards from './components/Cards';
-import Index from './pages/Index';
-import Navbar from './components/Navbar';
-import Header from './components/Header';
-import Login from "./pages/Login"
-import Signup from './pages/Signup';
-import Show from './pages/Show';
+import {Outlet} from "react-router-dom"
 
-export default function App() {
+function App() {
   return (
-<Index/>
-  )
+    <div className="App">
+      <Outlet/>
+    </div>
+  );
 }
+
+export default App;
