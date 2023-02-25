@@ -13,7 +13,7 @@ const Cards = () => {
           <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
             <h3>
               <a
-                href="/"
+                href={`/bookmarks/${bookmark.id}`}
                 class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
               >
                 {bookmark.title}
@@ -22,10 +22,9 @@ const Cards = () => {
             <p class="text-body-color mb-7 text-base leading-relaxed">
             {bookmark.description}
             </p>
-            <a
-              href="javascript:void(0)"
-              class="text-body-color hover:border-primary hover:bg-primary inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition hover:text-white"
-            >
+            <a href={`/bookmarks/${bookmark.id}`}
+              class="text-body-color hover:border-primary hover:bg-primary inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition"
+            >  
               View Details
             </a>
           </div>

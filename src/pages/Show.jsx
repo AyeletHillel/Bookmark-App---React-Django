@@ -1,25 +1,19 @@
 import Navbar from "../components/Navbar";
+import { Link, useLoaderData } from "react-router-dom"
 
-import { useState } from 'react'
-import { CheckIcon, QuestionMarkCircleIcon, StarIcon } from '@heroicons/react/20/solid'
-import { RadioGroup } from '@headlessui/react'
-import { ShieldCheckIcon } from '@heroicons/react/24/outline'
-
-const item = {
-  title: 'Everyday Ruck Snack',
-  category: "Data Science",
-  subCategory: "Machine Learning",
-  description:
-    "Don't compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.",
-  img: 'https://images.rawpixel.com/image_400/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3AtMjAwLWV5ZS0wMzQyNzAyLmpwZw.jpg'
-}
-const reviews = { average: 4, totalCount: 1624 }
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+// const item = {
+//   title: 'Everyday Ruck Snack',
+//   category: "Data Science",
+//   subCategory: "Machine Learning",
+//   description:
+//     "Don't compromise on snack-carrying capacity with this lightweight and spacious bag. The drawstring top keeps all your favorite chips, crisps, fries, biscuits, crackers, and cookies secure.",
+//   img: 'https://images.rawpixel.com/image_400/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3AtMjAwLWV5ZS0wMzQyNzAyLmpwZw.jpg'
+// }
 
 const Show = () => {
+
+  const item = useLoaderData();
+
 return (
     <div>
         <Navbar/>
