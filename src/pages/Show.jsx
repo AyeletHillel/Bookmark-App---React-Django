@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import { Link, useLoaderData } from "react-router-dom"
+import { useLoaderData } from "react-router-dom"
 
 // const item = {
 //   title: 'Everyday Ruck Snack',
