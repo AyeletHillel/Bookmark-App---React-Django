@@ -4,6 +4,7 @@ import App from "./App"
 import { indexLoader, showLoader } from "./loaders"
 import Index from "./pages/Index"
 import Show from "./pages/Show"
+import Create from "./pages/Create"
 
 const router = createBrowserRouter(createRoutesFromElements(
     <>

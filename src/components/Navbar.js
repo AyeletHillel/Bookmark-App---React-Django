@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
     return (
     <div>
@@ -16,9 +18,11 @@ const Navbar = () => {
             <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
                 <div class="flex items-center">
                     <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium">
+                        <Link to={"/"}>
                         <li>
                             <a href="#" class="text-gray-900 dark:gray-900 hover:underline" aria-current="page">Home</a>
                         </li>
+                        </Link>
                         <li>
                             <a href="#" class="text-gray-900 dark:gray-900 hover:underline">About</a>
                         </li>

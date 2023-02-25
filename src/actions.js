@@ -12,7 +12,7 @@ export const createAction = async ({request}) => {
         img: formData.get("img")
     }
 
-    await fetch(URL + "/bookmarks", {
+    await fetch(URL + "/bookmarks/", {
         method: "post",
         headers: {
             "Content-Type": "application/json"

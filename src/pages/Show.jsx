@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import { useLoaderData } from "react-router-dom"
+import { useLoaderData, Link, Form } from "react-router-dom"
 
 // const item = {
 //   title: 'Everyday Ruck Snack',
@@ -36,19 +36,27 @@ return (
                   Access Resource
                 </button>
                 <br/>
-                <button
+                <Form action={`/update/${item.id}`} method="post">
+            <input type="text" name="title" placeholder="write title here" />
+            <input type="text" name="description" placeholder="write description here"/>
+            <input type="text" name="img" placeholder="add image URL here" />
+            <button
                   type="submit"
                   className="bg-gradient-to-r from-purple-500 to-pink-500 flex w-full items-center justify-center rounded-md border border-transparent py-3 px-8 text-base font-medium text-white hover:bg-indigo-700"
                 >
                  Edit Resource
                 </button>
+        </Form>
+
                 <br/>
+                <Form action={`/delete/${item.id}`} method="post">
                 <button
                   type="submit"
                   className="bg-gradient-to-r from-purple-500 to-pink-500 flex w-full items-center justify-center rounded-md border border-transparent py-3 px-8 text-base font-medium text-white hover:bg-indigo-700"
                 >
                   Delete Resource
                 </button>
+                </Form>
               </div>
             </section>
             </div>
