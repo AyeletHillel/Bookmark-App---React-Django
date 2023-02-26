@@ -3,6 +3,7 @@ import {useLoaderData} from "react-router-dom"
 const Cards = () => {
   const bookkmarks = useLoaderData()
     return bookkmarks.map(bookmark => (  
+      <div className="grid-flow-col">
       <div class="w-full px-4 md:w-1/2 xl:w-1/3">
         <div class="mb-10 overflow-hidden rounded-lg bg-white">
           <img
@@ -29,6 +30,7 @@ const Cards = () => {
             </a>
           </div>
         </div>
+      </div>
       </div>
     ))
 };

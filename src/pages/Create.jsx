@@ -4,7 +4,6 @@ import Navbar from "../components/Navbar";
 
 const Create = () => {
     return (<div>
-        <Navbar/>
         <h1>Add New Resource</h1>
         <Form action="/create" method="post">
             <input type="text" name="title" placeholder="write title here" />
