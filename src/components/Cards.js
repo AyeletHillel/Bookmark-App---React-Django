@@ -1,20 +1,41 @@
 import {useLoaderData} from "react-router-dom"
+import {useState, useRef} from "react"
+import useSearch from "../useSearch";
 
 
 const Cards = () => {
 
   const bookkmarks = useLoaderData()
 
+  const [displayedBookmarks, filterBookmarks, resetBookmarks] = useSearch(bookkmarks, (term) => {
+    return bookkmarks.filter((bookmark) => {
+      return bookmark.title.toLowerCase().includes(term.toLowerCase())
+    })
+  })
+
+  const inputRef = useRef(null)
+
+  const handleSubmit = (event) => {
+    const search = inputRef.current.value
+    if (search == "") {
+      resetBookmarks()
+      return 1
+    }
+    filterBookmarks(search)
+  }
+
+
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Resources</h2>
+          Search: <input type="text" ref={inputRef}/> <input onClick={handleSubmit} type="submit"/>
         </div>
         <ul
           className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
         >
-          {bookkmarks.map((bookmark) => (
+          {displayedBookmarks.map((bookmark) => (
             <li key={bookmark.title}>
               <img className="aspect-[3/2] w-full rounded-2xl object-cover" src={bookmark.img} alt="" />
               <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{bookmark.title}</h3>
