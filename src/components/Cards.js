@@ -1,38 +1,38 @@
 import {useLoaderData} from "react-router-dom"
 
+
 const Cards = () => {
+
   const bookkmarks = useLoaderData()
-    return bookkmarks.map(bookmark => (  
-      <div className="grid-flow-col">
-      <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-        <div class="mb-10 overflow-hidden rounded-lg bg-white">
-          <img
-            src={bookmark.img}
-            alt="image"
-            class="w-full"
-          />
-          <div class="p-8 text-center sm:p-9 md:p-7 xl:p-9">
-            <h3>
-              <a
-                href={`/bookmarks/${bookmark.id}`}
-                class="text-dark hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]"
-              >
-                {bookmark.title}
-              </a>
-            </h3>
-            <p class="text-body-color mb-7 text-base leading-relaxed">
-            {bookmark.description}
-            </p>
-            <a href={`/bookmarks/${bookmark.id}`}
-              class="text-body-color hover:border-primary hover:bg-primary inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition"
+
+  return (
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Resources</h2>
+        </div>
+        <ul
+          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+        >
+          {bookkmarks.map((bookmark) => (
+            <li key={bookmark.title}>
+              <img className="aspect-[3/2] w-full rounded-2xl object-cover" src={bookmark.img} alt="" />
+              <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{bookmark.title}</h3>
+              <p className="text-base leading-7 text-gray-600">{bookmark.description}</p>
+              <a href={`/bookmarks/${bookmark.id}`}
+              class="mt-5 text-body-color hover:border-primary hover:bg-primary inline-block rounded-full border border-[#E5E7EB] py-2 px-7 text-base font-medium transition"
             >  
               View Details
             </a>
-          </div>
-        </div>
+              <ul role="list" className="mt-6 flex gap-x-6">
+              </ul>
+            </li>
+          ))}
+        </ul>
       </div>
-      </div>
-    ))
+    </div>
+  )
 };
 
 export default Cards; 
+

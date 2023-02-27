@@ -9,11 +9,7 @@ const Header = () => {
             <p class="max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-900">Data PM is a community of knowledge sharing. <br/> 
             Our website offers a curated list of helpful tutorials, articles, and more to help you on your educational journey. <br/> 
             We’re also always open to suggestions and contributions from the community — if you’ve come across a great resource that you believe should be shared, simply click the "Add Resource" button and fill out the form. </p>
-            <Link to={"bookmarks/create"}>
-            <button class="max-w-2xl mb-6  bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-2 px-4 rounded-full">
-Add Resource
-</button>
-</Link>
+
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <img class="max-w-full h-auto rounded-full" src="https://www.oohology.com/uploads/blog/image/full_2x_OOH_WomenWhoCode2.jpg" alt="mockup"/>
