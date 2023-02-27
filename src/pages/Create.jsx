@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 
 const Create = () => {
     return (<div className="mx-auto max-w-6xl px-3 sm:px-6 lg:px-8">
-        <h1 class="max-w-2xl mb-4 text-1xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-4xl dark:text-gray-900">Add New Resource</h1>
+        <h1 class="mt-5 md:mt-0 max-w-2xl mb-4 text-1xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-4xl dark:text-gray-900">Add New Resource</h1>
         <Form action="/create" method="post">
         <div className="sm:grid sm:grid-cols-3 sm:items-start sm:gap-4 sm:border-t sm:border-gray-200 sm:pt-4">
               <label className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
